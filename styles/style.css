@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-size: 2rem;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .categories {
+    text-align: center;
+}
+
+.categories>h1 {
+    font-variant: small-caps;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.categories>ul>li {
+    cursor: pointer;
+    width: 30%;
+    border: 2px solid black;
+    border-collapse: initial;
+    margin: 0 auto;
+    list-style: none;
+    border-bottom: none;
+}
+
+.categories>ul>li:last-child {
+    border-bottom: 2px solid black;
+}
+
+.categories>ul>li:hover {
+    background-color: khaki;
+    color: white;
+} */
+
+.categories {
+    text-align: center;
+}
+
+.categories__items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.categories__item {
+    cursor: pointer;
+    margin: 0px 15px;
+    height: 300px;
+    width: 240px;
+    border-left: 0;
+    border-top: 0;
+    background-image: linear-gradient(to right, rgb(187, 230, 255), rgb(141, 210, 250));
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+    transition: all 0.7s ease;
+}
+
+.categories__item:hover {
+    background-image: linear-gradient(to right, rgb(141, 210, 250), rgb(77, 185, 248));
+    box-shadow: -5px -5px 5px 0px rgba(0, 0, 0, 0.4);
+    border-right: 0;
+    border-bottom: 0;
+    transform: translateY(-30px);
+}
+
+.categories__item:hover .categories__item__header {
+    color: rgb(41, 172, 248);
+}
+
+.categories__item__header {
+    font-variant: small-caps;
+    font-size: 1.7rem;
+    color: rgb(70, 191, 250);
+}
+
+.container {
+    display: none;
+    height: 50%;
+    text-align: center;
+}
+
+input {
+    margin: 10px 0px;
+    outline: none;
+}
+
+button {
+    width: 50%;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    font-variant: small-caps;
+}
+
+button:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.guessedPassword {
+    color: rgb(10, 190, 50);
+    font-weight: 600;
+}
+
+img {
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+.unguessedPassword {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(185, 20, 20)
+}
+
+@media only screen and (max-width: 876px) {
+    .container {
+        display: none;
+        /* display: block; */
+    }
+}
