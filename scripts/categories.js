@@ -6,9 +6,9 @@ const fruits = document.getElementById("fruits");
 const cars = document.getElementById("cars");
 const colors = document.getElementById("colors");
 
-const database_animals = ["Lew", "Słoń", "Pszczoła", "Komar", "Wydra", "Skunks", "Żyrafa", "Orzeł", "Orangutan", "Mysz"];
-const database_jobs = ["Strażak", "Nauczyciel", "Policjant", "Sędzia", "Prawnik", "Lekarz", "Architekt", "Programista", "Marketer", "Kasjer"];
-const database_sports = ["Siatkówka", "Football", "Poker", "Koszykówka", "Pływanie", "Tenis", "Baseball", "Kręgle", "Biegi", "Pływanie"];
+const database_animals = ["Lew", "Szynszyl", "Koala", "Komar", "Wydra", "Skunks", "Gepard", "Goryl", "Orangutan", "Mysz"];
+const database_jobs = ["Sportowiec", "Nauczyciel", "Policjant", "Murarz", "Prawnik", "Lekarz", "Architekt", "Programista", "Marketer", "Kasjer"];
+const database_sports = ["Szermierka", "Szachy", "Poker", "Hokej", "Rugby", "Tenis", "Baseball", "Boks", "Biegi", "Kajakarstwo"];
 const database_food = ["Pomidor", "Malina", "Melon", "Arbuz", "Brzoskwinia", "Mandarynka", "Kapusta", "Marchewka", "Kalafior", "Seler"];
 const database_cars = ["Audi", "Mercedes", "BMW", "Maybach", "Suzuki", "Toyota", "Bugatti", "Chevrolet", "Maserati", "Lamborghini"];
 const database_colors = ["Niebieski", "Czarny", "Czerwony", "Fioletowy", "Szary", "Granatowy", "Kremowy", "Zielony", "Seledynowy", "Turkusowy"]; 
