@@ -89,9 +89,9 @@ function game() {
         checkWin();
     }
 
-    function keyboardPlayerGuess() {
-        if (event.keyCode>=65 && event.keyCode<=90) {
-            playerGuess = String.fromCharCode(event.keyCode);
+    function keyboardPlayerGuess(e) {
+        if (e.keyCode>=65 && e.keyCode<=90) {
+            playerGuess = e.key;
             checkButtonHandler();
         }
     }
