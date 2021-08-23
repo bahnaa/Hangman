@@ -2,9 +2,6 @@ const displayPassword = document.querySelector("p");
 const usedLetters = document.querySelector("p").nextElementSibling;
 const container = document.querySelector(".container");
 const image = document.querySelector("img");
-// const leaderInput = prompt("Podaj hasło do odgadnięcia (min. 2 znaki):").trim().toUpperCase().split("");
-// const fiftyLeft = document.querySelector(".fifty");
-// const fiftyRight = document.querySelector(".fifty").nextElementSibling;
 
 function game() {
 
@@ -38,8 +35,6 @@ function game() {
     function checkWin() {
         if(!displayPassword.innerText.toString().split("").includes("_")) {
         usedLetters.style.display = "none";
-        // fiftyRight.style.display = "none";
-        // fiftyLeft.style.alignItems = "center";
         displayPassword.innerHTML = `Gratulacje!<br>Odgadłeś hasło: <span class="guessedPassword">${database[databaseItemNumber]}</span><br>Zużyte szanse: ${counter}/9`;
         displayPassword.style.textAlign = "center";
         }
@@ -79,10 +74,7 @@ function game() {
     function checkButtonHandler() {
         // turns off the function when password is (un)guessed
         if(!displayPassword.innerText.toString().split("").includes("_")) {return};
-    //     if(playerGuess.length!=1 || !/^[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuVvWwQqXxYyZzŹźŻż]/.test(playerGuess)) {
-    //     playerGuess.value = "";
-    //     return;
-    // } 
+
         playerGuess = playerGuess.toUpperCase();
         checkPlayerGuess();
         if(counter==9){return};
