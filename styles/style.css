@@ -122,6 +122,10 @@ img {
 }
 
 @media (hover: none) {
+    body {
+        overflow: hidden;
+    }
+
     .categories {
         display: none;
     }
