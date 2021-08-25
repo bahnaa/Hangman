@@ -101,18 +101,6 @@ img {
     color: rgb(185, 20, 20)
 }
 
-@media (hover: none) {
-    .categories {
-        display: none;
-    }
-
-    .mobile-info {
-        display: block;
-        font-size: 2rem;
-        text-align: center;
-    }
-}
-
 @media (max-width: 1631px) {
     .break {
         width: 100%;
@@ -130,5 +118,17 @@ img {
 
     .categories__items {
         display: block;
+    }
+}
+
+@media (hover: none) {
+    .categories {
+        display: none;
+    }
+
+    .mobile-info {
+        display: block;
+        font-size: 2rem;
+        text-align: center;
     }
 }
