@@ -13,6 +13,10 @@ body {
     align-items: center;
 }
 
+.mobile-info {
+    display: none;
+}
+
 /* .categories {
     text-align: center;
 }
@@ -121,9 +125,14 @@ img {
     color: rgb(185, 20, 20)
 }
 
-@media only screen and (max-width: 876px) {
-    .container {
+@media (hover: none) {
+    .categories {
         display: none;
-        /* display: block; */
+    }
+
+    .mobile-info {
+        display: block;
+        font-size: 2rem;
+        text-align: center;
     }
 }
